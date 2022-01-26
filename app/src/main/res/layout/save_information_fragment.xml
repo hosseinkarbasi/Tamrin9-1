@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/taxtviewbackgruond"
+        android:text="full name"
+        android:textAlignment="center"
+        android:textColor="@color/sorati"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/taxtviewbackgruond"
+        android:text="user name"
+        android:textAlignment="center"
+        android:textColor="@color/sorati"
+        app:layout_constraintEnd_toEndOf="@id/tvFullName"
+        app:layout_constraintStart_toStartOf="@id/tvFullName"
+        app:layout_constraintTop_toBottomOf="@id/tvFullName" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/taxtviewbackgruond"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@color/sorati"
+        app:layout_constraintEnd_toEndOf="@id/tvUserName"
+        app:layout_constraintStart_toStartOf="@id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/taxtviewbackgruond"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="@color/sorati"
+        app:layout_constraintEnd_toEndOf="@id/tvEmail"
+        app:layout_constraintStart_toStartOf="@id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/taxtviewbackgruond"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="@color/sorati"
+        app:layout_constraintEnd_toEndOf="@id/tvPassword"
+        app:layout_constraintStart_toStartOf="@id/tvPassword"
+        app:layout_constraintTop_toBottomOf="@id/tvPassword" />
+
+    <Button
+        android:id="@+id/btnSaveInfo"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F47DA6"
+        android:text="Save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGender"
+        app:layout_constraintStart_toStartOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/tvInfoGroup"
+        android:layout_width="41dp"
+        android:layout_height="47dp"
+        app:constraint_referenced_ids="tvFullName,tvUserName,tvEmail,tvPassword,tvGender,btnSaveInfo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
